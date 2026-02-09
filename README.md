@@ -19,13 +19,15 @@ A full-stack AI application designed to identify potato leaf diseases (Early Bli
 1. Model Serving (Docker)
 Install docker and run the following command.
 
-'''
+```
+    
     docker run -t --rm -p 8501:8501 \
         -v "(**your own path**)" \
         emacski/tensorflow-serving:latest \
         --rest_api_port=8501 \
         --model_config_file=/Project/models.config
-'''
+        
+```
 
 
 Note: This command runs the ARM-optimized image for Apple Silicon and mounts the local model folder.
@@ -42,11 +44,11 @@ Navigate to the /api directory, activate your virtual environment and install de
 
 3. Frontend(React)
 Navigate to /frontend directory and start the deployment server:
-'''
+```
     cd frontend
     npm install
     npm run dev
-'''
+```
 
 
 
